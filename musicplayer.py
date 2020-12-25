@@ -52,16 +52,16 @@ def resume():
     pygame.mixer.music.unpause()
 
 
-play_Button = tk.Button(mp, height=3, width=5, text='Play Music', font='cambria 14 bold', command=play, bg='lime green',
+play_Button = tk.Button(mp, height=3, width=5, text='Play Music', font='algerian 14 bold', command=play, bg='lime green',
                         fg='black')
 
-pause_Button = tk.Button(mp, height=3, width=5, text='Pause Music', font='cambria 14 bold', command=pause, bg='red',
+pause_Button = tk.Button(mp, height=3, width=5, text='Pause Music', font='algerian 14 bold', command=pause, bg='red',
                          fg='black')
 
-resume_Button = tk.Button(mp, height=3, width=5, text='Resume Music', font='cambria 14 bold', command=resume,
+resume_Button = tk.Button(mp, height=3, width=5, text='Resume Music', font='algerian 14 bold', command=resume,
                           bg='yellow', fg='black')
 
-stop_Button = tk.Button(mp, height=3, width=5, text='Stop Music', font='cambria 14 bold', command=exit_music_player,
+stop_Button = tk.Button(mp, height=3, width=5, text='Stop Music', font='algerian 14 bold', command=exit_music_player,
                         bg='red', fg='black')
 
 play_Button.pack(fill='x')
@@ -73,6 +73,11 @@ playlist.pack(fill='both', expand='yes')
 
 var = tk.StringVar()
 
-songTitle = tk.Label(mp, font='cambria 14 bold', textvariable=var)
+
+songTitle = tk.Label(mp, font='algerian 14 bold', textvariable=var)
+
 songTitle.pack()
+
+
+# running application for infinite
 mp.mainloop()
